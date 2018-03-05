@@ -8,10 +8,15 @@
 </head>
 <body>
   <div id="app">
-    <input type="" v-focus>
     <img v-big-img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=6a4d01e85e66d01661199828a72ad498/8601a18b87d6277fcdb9b01d24381f30e924fc68.jpg" alt="">
   </div>
   <script src="./vue.js"></script>
   <script src="./vue-click-big-img.js"></script>
+  <script>
+    Vue.use(VueClickBigImg)
+    new Vue({
+      el: '#app'
+    })
+  </script>
 </body>
 </html>
